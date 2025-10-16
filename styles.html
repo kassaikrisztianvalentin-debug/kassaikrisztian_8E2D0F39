@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeneVilág – Zenei stílusok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #111, #222);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #ff4081;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    main {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff4081;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(255, 64, 129, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: #ff4081;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎵 ZeneVilág</h1>
+    <nav>
+      <a href="index.html">Kezdőlap</a>
+      <a href="styles.html">Zenei stílusok</a>
+      <a href="artists.html">Előadók</a>
+      <a href="metronome.html">Metronóm</a>
+      <a href="contact.html">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Zenei stílusok felfedezése</h2>
+    <p>Ismerd meg a világ különböző zenei irányzatait! Minden műfaj egy új történetet mesél el hangokban és érzelmekben.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Rock zene">
+        <h3>🎸 Rock</h3>
+        <p>A rock a szabadság és lázadás zenéje. Elektromos gitár, erős dobok és ikonikus előadók jellemzik.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947" alt="Pop zene">
+        <h3>🎤 Pop</h3>
+        <p>A pop a legnépszerűbb műfaj – dallamos, könnyen megjegyezhető és minden korosztályhoz szól.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Jazz zene">
+        <h3>🎷 Jazz</h3>
+        <p>Szabad improvizáció, egyedi ritmusok és érzelemgazdag előadás – ez a jazz világa.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Klasszikus zene">
+        <h3>🎻 Klasszikus</h3>
+        <p>A harmónia, szépség és időtálló művek zenéje. Beethoven, Mozart és Bach öröksége él tovább.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc" alt="Elektronikus zene">
+        <h3>🎧 Elektronikus</h3>
+        <p>Modern, energikus és innovatív. DJ-k és producerek formálják a jövő hangzását.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1525286116112-b59af11adad1" alt="Hip-Hop">
+        <h3>🎤 Hip-Hop</h3>
+        <p>A ritmus és szöveg ereje: a hip-hop történeteket mesél a városok szívéből és az utcák hangulatából.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ZeneVilág | Készítette: <strong>Kassai Krisztián</strong></p>
+  </footer>
+</body>
+</html>

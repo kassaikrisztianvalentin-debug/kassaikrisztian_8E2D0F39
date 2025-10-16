@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeneVilág – A zene univerzuma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>🎵 ZeneVilág</h1>
+    <nav>
+      <a href="index.html">Kezdőlap</a>
+      <a href="styles.html">Zenei stílusok</a>
+      <a href="metronome.html">Metronóm</a>
+      <a href="contact.html">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Üdvözlünk a ZeneVilágban!</h2>
+    <p>Fedezd fel a különböző zenei stílusokat, ismerd meg kedvenc előadóidat és hallgass zenét bárhol, bármikor.</p>
+    <button class="btn" onclick="scrollToSection()">Fedezd fel</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>Miért szeretjük a zenét?</h3>
+    <p>A zene összeköt minket, inspirál és kifejezi azt, amit szavakkal nem mindig lehet elmondani.  
+    Oldalunk célja, hogy közelebb hozza hozzád a zene világát – a klasszikustól az elektronikusig.</p>
+  </section>
+
+  <section class="section">
+    <h3>Kiemelt műfajok</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>🎸 Rock</h4>
+        <p>A rock a szabadság és az energia zenéje. Fedezd fel a legendás bandákat!</p>
+      </div>
+      <div class="card">
+        <h4>🎧 Elektronikus</h4>
+        <p>Ütős ritmusok és modern hangzás – a mai klubok kedvence.</p>
+      </div>
+      <div class="card">
+        <h4>🎻 Klasszikus</h4>
+        <p>Az időtlen szépség és harmónia zenéje, évszázadokon átívelő mesterművekkel.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ZeneVilág | Készítette: <strong>Kassai Krisztián</strong></p>
+  </footer>
+
+  <script>
+    function scrollToSection() {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
